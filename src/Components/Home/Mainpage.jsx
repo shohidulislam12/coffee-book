@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 const MainPAge = () => {
     return (
         <div>
-            <Nav></Nav>
+            <Nav ></Nav>
             <Outlet></Outlet>
           <Footer></Footer>
         </div>
