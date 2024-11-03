@@ -6,7 +6,9 @@ import { Outlet } from 'react-router-dom';
 const MainPAge = () => {
     return (
         <div>
-            <Nav ></Nav>
+           <div className='h-16'>
+           <Nav ></Nav>
+           </div>
             <Outlet></Outlet>
           <Footer></Footer>
         </div>

@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 
 
 const CoffeCard = ({coffe}) => {
-    const {name,image,category,type,origin,rating,popularity}=coffe
+    const {name,image,category,id,type,origin,rating,popularity}=coffe
     return (
-        <div className=" border  ">
+        <NavLink to={`/card/${id}`} className=" border  ">
         <figure className="px-10 pt-10">
           <img
             src={image}
@@ -19,7 +20,7 @@ const CoffeCard = ({coffe}) => {
             <p className="text-sm">Popularity:{popularity}</p>
          
         </div>
-      </div>
+      </NavLink>
     );
 };
 

@@ -11,6 +11,7 @@ import DashBord from './Components/Home/DashBord.jsx';
 import Coffees from './Components/Home/Coffees.jsx';
 import Footer from './Components/Home/Footer.jsx';
 import Homepage from './Components/Home/Homepage.jsx';
+import CoffeeDetails from './Components/CoffeCard/CoffeeDetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,12 @@ const router = createBrowserRouter([
       path: "/dashbord",
       element: <DashBord></DashBord>
     },
+    {
+      path: "/card/:id",
+
+      element: <CoffeeDetails> </CoffeeDetails>
+    },
+    
 ]
   },
   
